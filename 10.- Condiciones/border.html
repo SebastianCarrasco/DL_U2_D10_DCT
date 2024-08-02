@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 1: Imagen con Borde</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Problema 1: Imagen con bordes</h1>
+        <img id="toggle-border-img" src="assets/img/image.jpg" alt="Imagen Desafío">
+        <button onclick="window.location.href='index.html'">Regresar al inicio</button>
+    </div>
+    <script>
+        document.getElementById('toggle-border-img').addEventListener('click', function() {
+            this.classList.toggle('bordered');
+        });
+    </script>
+</body>
+</html>

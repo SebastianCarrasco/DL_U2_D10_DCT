@@ -1,0 +1,128 @@
+/* Reset de márgenes y paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Asegura que el padding y border se incluyan en el tamaño total de los elementos */
+}
+
+/* Estilo del cuerpo */
+body {
+    font-family: Arial, sans-serif; /* Fuente principal */
+    background-color: #f4f4f4; /* Fondo gris claro */
+    display: flex; /* Flexbox para centrar contenido */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100vh; /* Altura completa de la ventana */
+    margin: 0; /* Sin margen */
+}
+
+/* Contenedor principal */
+.container {
+    background: white; /* Fondo blanco para el contenedor */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+    text-align: center; /* Texto centrado */
+    max-width: 500px; /* Ancho máximo del contenedor */
+    width: 100%; /* Ancho completo dentro del contenedor */
+}
+
+/* Botones de la página principal */
+.buttons {
+    display: flex; /* Flexbox para alinear los botones en fila */
+    justify-content: center; /* Centrar los botones horizontalmente */
+    gap: 10px; /* Espacio entre los botones */
+}
+
+.buttons button {
+    padding: 10px 20px; /* Espaciado interno del botón */
+    background-color: #007BFF; /* Color de fondo azul */
+    color: white; /* Texto blanco */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor de mano al pasar sobre el botón */
+}
+
+.buttons button:hover {
+    background-color: #0056b3; /* Fondo más oscuro al pasar el mouse */
+}
+
+/* Estilos de la imagen */
+img {
+    max-width: 100%; /* Imagen responsive, se adapta al contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    cursor: pointer; /* Cursor de mano al pasar sobre la imagen */
+    transition: border 0.3s ease; /* Transición suave en el borde */
+}
+
+img.bordered {
+    border: 2px solid red; /* Borde rojo cuando se activa */
+}
+
+/* Estilos de los inputs */
+input, select, button {
+    margin: 10px 0; /* Margen vertical entre elementos */
+    padding: 10px; /* Espaciado interno */
+    width: 100%; /* Ancho completo dentro del contenedor */
+    max-width: 200px; /* Ancho máximo de 200px */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 4px; /* Bordes redondeados */
+}
+
+/* Estilos del párrafo resultado */
+p {
+    margin-top: 20px; /* Margen superior */
+    font-size: 16px; /* Tamaño de fuente */
+}
+
+/* Limitar el ancho de las imágenes para evitar que se salgan de los márgenes */
+.sticker img {
+    max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+/* Asegurar que el contenedor no se salga de los márgenes */
+.sticker-counter {
+    display: flex; /* Flexbox para organizar las imágenes */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en múltiples líneas */
+    justify-content: center; /* Centra los elementos dentro del contenedor */
+    gap: 10px; /* Espacio entre los elementos */
+}
+
+/* Estilo individual de cada sticker */
+.sticker {
+    flex: 1 1 100px; /* Flexbox: crece y se encoge, con ancho mínimo de 100px */
+    max-width: 120px; /* Ancho máximo del sticker */
+    text-align: center; /* Texto centrado */
+}
+
+/* Estilos de los botones */
+button {
+    display: block; /* El botón se muestra como un bloque */
+    margin-top: 20px; /* Margen superior */
+    padding: 10px; /* Espaciado interno */
+    background-color: #28a745; /* Fondo verde */
+    color: white; /* Texto blanco */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor de mano al pasar sobre el botón */
+}
+
+button:hover {
+    background-color: #218838; /* Fondo más oscuro al pasar el mouse */
+}
+
+/* Contenedor para los selectores alineados en fila */
+.select-container {
+    display: flex; /* Utiliza flexbox para alinear los select uno al lado del otro */
+    gap: 10px; /* Espacio entre cada select */
+}
+
+/* Asegurar que los selectores no se expandan */
+select {
+    flex: 1;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background-color: white;
+}
